@@ -1,0 +1,10 @@
+{
+  "name": "yorkland-sapporo",
+  "version": "1.0.0",
+  "description": "Yet another scotland-yard with WebRTC",
+  "main": "index.js",
+  "repository": "https://github.com/ushitora-anqou/yorkland-sapporo",
+  "author": "ushitora anqou",
+  "license": "MIT",
+  "private": false
+}
