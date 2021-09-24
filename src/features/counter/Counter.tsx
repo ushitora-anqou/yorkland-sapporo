@@ -25,8 +25,7 @@ export default function Counter(): JSX.Element {
           type="button"
           className={styles.button}
           aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
+          onClick={() => dispatch(decrement())}>
           -
         </button>
         <span className={styles.value}>{count}</span>
@@ -34,8 +33,7 @@ export default function Counter(): JSX.Element {
           type="button"
           className={styles.button}
           aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
+          onClick={() => dispatch(increment())}>
           +
         </button>
       </div>
@@ -49,22 +47,19 @@ export default function Counter(): JSX.Element {
         <button
           type="button"
           className={styles.button}
-          onClick={() => dispatch(incrementByAmount(incrementValue))}
-        >
+          onClick={() => dispatch(incrementByAmount(incrementValue))}>
           Add Amount
         </button>
         <button
           type="button"
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(incrementValue))}
-        >
+          onClick={() => dispatch(incrementAsync(incrementValue))}>
           Add Async
         </button>
         <button
           type="button"
           className={styles.button}
-          onClick={() => dispatch(incrementIfOdd(incrementValue))}
-        >
+          onClick={() => dispatch(incrementIfOdd(incrementValue))}>
           Add If Odd
         </button>
       </div>
