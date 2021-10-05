@@ -56,17 +56,30 @@
                 "tsx": "never"
             }
         ],
-        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }]
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        // thx to https://teppeis.hatenablog.com/entry/2019/02/typescript-eslint
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "no-underscore-dangle": "off"
     },
     "settings": {
         "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            },
             "node": {
                 "extensions": [
                     ".js",
                     ".jsx",
                     ".ts",
-                    ".tsx"
-                ]
+                    ".tsx",
+                    ".es6"
+                ],
+                "moduleDirectory": [
+                    "node_modules",
+                    "node_modules/@types"
+                ],
+                "paths": ["src"]
             }
         }
     }
